@@ -1,0 +1,1 @@
+python train.py -c ./config/supervised_exp/cifar/divaug/shakeshake_26_2x96_cifar100_b128_e1200.yaml -exp_name shakeshake_26_2x96_cifar100_b128_e1200

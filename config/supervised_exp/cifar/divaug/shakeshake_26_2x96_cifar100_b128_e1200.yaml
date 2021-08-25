@@ -1,0 +1,17 @@
+model:
+  type: shakeshake26_2x96d
+dataset: cifar100
+aug: divaug
+divaug:
+  N: 2
+  C: 8
+  S: 4
+batch: 128
+epoch: 1200
+lr_schedule:
+  type: 'cosine'
+optimizer:
+  lr: 0.1
+  type: sgd
+  nesterov: True
+  decay: 0.0005

@@ -1,0 +1,21 @@
+model:
+  type: pyramid
+  depth: 272
+  alpha: 200
+  bottleneck: True
+dataset: cifar10
+aug: divaug
+divaug:
+  N: 2
+  C: 8
+  S: 3
+batch: 128
+epoch: 600
+lr_schedule:
+  type: 'cosine'
+optimizer:
+  lr: 0.1
+  type: sgd
+  nesterov: True
+  decay: 0.0001
+mixed_precision: True

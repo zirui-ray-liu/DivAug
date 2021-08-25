@@ -1,0 +1,18 @@
+model:
+  type: resnet50
+dataset: imagenet
+aug: divaug
+divaug:
+  N: 2
+  C: 4
+  S: 2
+batch: 512
+epoch: 120
+lr_schedule:
+  type: 'cosine'
+optimizer:
+  lr: 0.2
+  type: sgd
+  nesterov: True
+  decay: 0.0001
+mixed_precision: True

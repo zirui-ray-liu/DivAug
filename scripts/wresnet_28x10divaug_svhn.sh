@@ -1,0 +1,1 @@
+python train.py -c ./config/supervised_exp/svhn/divaug/wresnet28x10_svhn_b128.yaml -exp_name wresnet28x10_svhn_b128

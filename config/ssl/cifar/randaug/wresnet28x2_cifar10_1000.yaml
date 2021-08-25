@@ -1,0 +1,24 @@
+model:
+  type: wresnet28_2
+dataset: cifar10
+aug: randaug
+randaug:
+  N: 2
+batch: 32
+train_size: 1000
+batch_unsup: 448
+ratio_unsup: 5.0
+softmax_temp: 0.4
+confidence_threshold: 0.8
+ratio_mode: 'linear'
+epoch: 6400
+lr_schedule:
+  type: 'cosine'
+  warmup:
+    multiplier: 300
+    epoch: 120
+optimizer:
+  lr: 0.0001
+  type: sgd
+  nesterov: True
+  decay: 0.0005

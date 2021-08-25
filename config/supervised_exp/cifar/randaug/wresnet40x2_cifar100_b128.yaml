@@ -1,0 +1,17 @@
+model:
+  type: wresnet40_2
+dataset: cifar100
+aug: randaug
+randaug:
+  N: 2
+  M: 14
+  C: 4
+batch: 128
+epoch: 200
+lr_schedule:
+  type: 'cosine'
+optimizer:
+  lr: 0.1
+  type: sgd
+  nesterov: True
+  decay: 0.0005

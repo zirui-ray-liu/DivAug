@@ -1,0 +1,1 @@
+python train.py -c ./config/supervised_exp/cifar/divaug/wresnet28x10_cifar100_b128.yaml -exp_name wresnet28x10_cifar100_b128

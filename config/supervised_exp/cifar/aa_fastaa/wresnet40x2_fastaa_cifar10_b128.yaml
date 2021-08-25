@@ -1,0 +1,13 @@
+model:
+  type: wresnet40_2
+dataset: cifar10
+aug: fastaa
+batch: 128
+epoch: 200
+lr_schedule:
+  type: 'cosine'
+optimizer:
+  lr: 0.1
+  type: sgd
+  nesterov: True
+  decay: 0.0005
